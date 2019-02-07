@@ -17,6 +17,5 @@ def Mapper(X, corpus,min_dist = 0.01, n_components = 2, n_neighbors=10):
 	).fit_predict(u)
 
 	X_coords, y_coords = u[:, 0], u[:, 1]
-	data = {'X':X_coords,'Y':y_coords,'labels':labels,'corpus':corpus}
-
-	return pd.DataFrame(data)
+	data = {'X':X_coords,'Y':y_coords,'labels':labels,'corpus':corpus,'value':0.15}
+	pd.DataFrame(data).to_csv('data.csv')
