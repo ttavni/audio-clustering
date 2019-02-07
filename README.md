@@ -12,6 +12,6 @@ audio_files = glob.glob("{}/*.{}".format(directory,file_type))
 music_notes = getNoteFreqs(audio_files)
 df = Mapper(music_notes.values,audio_files)
 
-![output](https://i.imgur.com/sVtYnTJ.png)
-
 ```
+
+![output](https://i.imgur.com/sVtYnTJ.png)
